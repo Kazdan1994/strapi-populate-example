@@ -1,0 +1,9 @@
+[
+  {
+    "file_id": 1,
+    "related_id": 1,
+    "related_type": "api::article.article",
+    "field": "image",
+    "order": 1
+  }
+]

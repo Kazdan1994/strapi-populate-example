@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "action": "plugin::users-permissions.user.me",
+    "created_at": 1658156677964,
+    "updated_at": 1658156677964,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 2,
+    "action": "plugin::users-permissions.auth.callback",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 3,
+    "action": "plugin::users-permissions.auth.connect",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 4,
+    "action": "plugin::users-permissions.auth.forgotPassword",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 5,
+    "action": "plugin::users-permissions.auth.resetPassword",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 6,
+    "action": "plugin::users-permissions.auth.register",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 7,
+    "action": "plugin::users-permissions.auth.emailConfirmation",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 8,
+    "action": "plugin::users-permissions.auth.sendEmailConfirmation",
+    "created_at": 1658156677973,
+    "updated_at": 1658156677973,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 9,
+    "action": "api::article.article.find",
+    "created_at": 1658156834563,
+    "updated_at": 1658156834563,
+    "created_by_id": null,
+    "updated_by_id": null
+  },
+  {
+    "id": 10,
+    "action": "api::article.article.findOne",
+    "created_at": 1658156834563,
+    "updated_at": 1658156834563,
+    "created_by_id": null,
+    "updated_by_id": null
+  }
+]

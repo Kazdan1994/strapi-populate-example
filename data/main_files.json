@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Capture d’eěcran 2022-04-22 aĚ 16.02.50.png",
+    "alternative_text": "Capture d’eěcran 2022-04-22 aĚ 16.02.50.png",
+    "caption": "Capture d’eěcran 2022-04-22 aĚ 16.02.50.png",
+    "width": 1622,
+    "height": 900,
+    "formats": "{\"thumbnail\":{\"name\":\"thumbnail_Capture d’eěcran 2022-04-22 aĚ 16.02.50.png\",\"hash\":\"thumbnail_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969\",\"ext\":\".png\",\"mime\":\"image/png\",\"path\":null,\"width\":245,\"height\":136,\"size\":7.79,\"url\":\"/uploads/thumbnail_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969.png\"},\"large\":{\"name\":\"large_Capture d’eěcran 2022-04-22 aĚ 16.02.50.png\",\"hash\":\"large_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969\",\"ext\":\".png\",\"mime\":\"image/png\",\"path\":null,\"width\":1000,\"height\":555,\"size\":68.72,\"url\":\"/uploads/large_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969.png\"},\"medium\":{\"name\":\"medium_Capture d’eěcran 2022-04-22 aĚ 16.02.50.png\",\"hash\":\"medium_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969\",\"ext\":\".png\",\"mime\":\"image/png\",\"path\":null,\"width\":750,\"height\":416,\"size\":43.69,\"url\":\"/uploads/medium_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969.png\"},\"small\":{\"name\":\"small_Capture d’eěcran 2022-04-22 aĚ 16.02.50.png\",\"hash\":\"small_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969\",\"ext\":\".png\",\"mime\":\"image/png\",\"path\":null,\"width\":500,\"height\":277,\"size\":23.31,\"url\":\"/uploads/small_Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969.png\"}}",
+    "hash": "Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 24.13,
+    "url": "/uploads/Capture_d_eecran_2022_04_22_a_E_16_02_50_7c12ac3969.png",
+    "preview_url": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "created_at": 1658156820714,
+    "updated_at": 1658156820714,
+    "created_by_id": 1,
+    "updated_by_id": 1
+  }
+]

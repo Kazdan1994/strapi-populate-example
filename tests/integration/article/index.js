@@ -33,7 +33,7 @@ describe('article test', () => {
     await strapi.query('api::article.article').create({
       data: {
         title: 'article #1',
-        author: [user.id]
+        author: user.id
       }
     });
 
@@ -55,7 +55,7 @@ describe('article test', () => {
     await strapi.query('api::article.article').create({
       data: {
         title: 'article #1',
-        author: [user.id]
+        author: user.id
       }
     });
 
@@ -94,5 +94,26 @@ describe('article test', () => {
     expect(response.body.data.articles.data).toHaveLength(1);
     expect(response.body.data.articles.data[0].attributes).toHaveProperty('author');
     expect(response.body.data.articles.data[0].attributes.author.data.id).toBe(user.id.toString());
+  });
+
+  it('should not get articles that user is not the author', async () => {
+    const user = await createUser();
+
+    await strapi.query('api::article.article').create({
+      data: {
+        title: 'article #1',
+        author: null
+      }
+    });
+
+    const token = await jwt(user.id);
+
+    const response = await request(strapi.server.httpServer)
+      .get('/api/articles')
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .set('Authorization', `Bearer ${token}`);
+
+    expect(response.body.data).toHaveLength(0);
   });
 });

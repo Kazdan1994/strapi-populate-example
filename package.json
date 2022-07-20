@@ -20,10 +20,12 @@
     "supertest": "^6.2.4"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.2.3",
     "@strapi/plugin-i18n": "4.2.3",
     "@strapi/plugin-users-permissions": "4.2.3",
     "@strapi/strapi": "4.2.3",
-    "better-sqlite3": "7.6.2"
+    "better-sqlite3": "7.6.2",
+    "strapi-plugin-transformer": "^2.0.2"
   },
   "author": {
     "name": "A Strapi developer"

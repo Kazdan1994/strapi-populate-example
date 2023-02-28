@@ -1,6 +1,8 @@
 const {it, describe, expect, beforeAll} = require('@jest/globals');
 const request = require('supertest');
 const {createUser, jwt, grantPrivilege} = require('../../helpers/strapi');
+const path = require("path");
+const {readdirSync} = require("fs");
 
 describe('article test', () => {
   beforeAll(async () => {
@@ -115,5 +117,39 @@ describe('article test', () => {
       .set('Authorization', `Bearer ${token}`);
 
     expect(response.body.data).toHaveLength(0);
+  });
+
+  it.only('should create an article', async () => {
+    const user = await createUser();
+    const token = await jwt(user.id);
+    const filename = 'admin.jpg';
+    const filePath = path.resolve(__dirname, filename);
+
+    await grantPrivilege(1, 'api::article.controllers.article.create');
+
+    const response = await request(strapi.server.httpServer)
+      .post('/api/articles')
+      .set('Authorization', `Bearer ${token}`)
+      .attach('files.image', filePath)
+      .field('data', JSON.stringify({
+        author: user.id,
+        title: 'article 1'
+      }));
+
+    const uploadFolder = readdirSync(path.resolve(__dirname, '../../../public/uploads'));
+
+    expect(response.body.error).toBeUndefined();
+    expect(response.body.data).toBeDefined();
+    expect(uploadFolder[1]).toStrictEqual(expect.stringMatching(/admin_[a-z0-9]+\.jpg/gm));
+    expect(uploadFolder[2]).toStrictEqual(expect.stringMatching(/thumbnail_admin_[a-z0-9]+\.jpg/gm));
+
+    const article = await strapi.query('api::article.article').findOne({
+      where: {
+        id: response.body.data.id,
+      },
+      populate: ['image']
+    });
+
+    expect(article.image.name).toBe(filename);
   });
 });

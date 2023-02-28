@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+  <!--<form>
+    &lt;!&ndash; Can be multiple files &ndash;&gt;
+    <input type="file" name="files" />
+    <input type="submit" value="Submit" />
+  </form>-->
+  <form>
+    <!-- Can be multiple files if you setup "collection" instead of "model" -->
+    <input type="file" name="files.image" />
+    <input type="text" name="ref" value="api::article.article" />
+    <input type="text" name="refId" value="2" />
+    <input type="text" name="field" value="image" />
+    <input type="submit" value="Submit" />
+  </form>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
